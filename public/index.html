@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HỆ THỐNG QUẢN LÍ SẢN PHẨM KHOA HỌC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Logo_Tan_Trao_University.png" alt="Logo" class="logo">
+      <div class="header-text">
+        <h3>UBND TỈNH TUYÊN QUANG</h3>
+        <h2>TRƯỜNG ĐẠI HỌC TÂN TRÀO</h2>
+        <p>PHÒNG QLKH & HỢP TÁC QT</p>
+      </div>
+      <div class="header-badge">
+        <span>CHẤT LƯỢNG</span>
+        <span>PHÁT TRIỂN</span>
+        <span>HỘI NHẬP</span>
+      </div>
+    </div>
+    <h1 class="main-title">HỆ THỐNG QUẢN LÍ SẢN PHẨM KHOA HỌC</h1>
+    <button id="viewDataBtn">📊 Xem dữ liệu</button>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <div class="form-group">
+        <label>Họ và tên</label>
+        <input type="text" id="name" placeholder="Nhập họ và tên" />
+      </div>
+      <div class="form-group">
+        <label>Khoa / Trung tâm</label>
+        <select id="faculty">
+          <option>Chọn khoa</option>
+          <option>CNTT</option>
+          <option>SP Toán</option>
+          <option>Ngữ văn</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Bộ môn</label>
+        <select id="department">
+          <option>Vui lòng chọn khoa trước</option>
+        </select>
+      </div>
+    </section>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="deTai">Đề tài nghiên cứu</button>
+      <button class="tab" data-tab="baiBao">Bài báo khoa học</button>
+      <button class="tab" data-tab="sach">Sách/Giáo trình</button>
+      <button class="tab" data-tab="huongDan">Hướng dẫn SV</button>
+      <button class="tab" data-tab="giaiThuong">Giải thưởng</button>
+    </div>
+
+    <div id="sach" class="tab-content active">
+      <h3>Danh sách sách/giáo trình/TLTK</h3>
+      <div class="book-list">
+        <div class="book-item">📘 Sách 1</div>
+      </div>
+      <button id="addBookBtn">➕ Thêm sách</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
