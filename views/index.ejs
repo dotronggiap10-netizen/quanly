@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HỆ THỐNG QUẢN LÍ SẢN PHẨM KHOA HỌC</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <% include partials/header %>
+
+  <main class="container">
+    <section class="profile">
+      <div class="p-col">
+        <label>Họ và tên</label>
+        <input id="name" value="<%= profile.name %>" />
+      </div>
+      <div class="p-col">
+        <label>Khoa / Trung tâm</label>
+        <select id="faculty">
+          <option><%= profile.faculty || 'Chọn khoa' %></option>
+          <option>CNTT</option><option>SP Toán</option><option>Ngữ văn</option>
+        </select>
+      </div>
+      <div class="p-col">
+        <label>Bộ môn</label>
+        <select id="department">
+          <option><%= profile.department || 'Chọn bộ môn' %></option>
+          <option>Toán</option><option>Tin học</option><option>Văn</option>
+        </select>
+      </div>
+      <div class="p-col">
+        <button id="saveProfile">Lưu thông tin</button>
+        <span id="profileMsg" class="msg"></span>
+      </div>
+    </section>
+
+    <nav class="tabs">
+      <button class="tab-btn active" data-type="detai">Đề tài nghiên cứu</button>
+      <button class="tab-btn" data-type="baibao">Bài báo khoa học</button>
+      <button class="tab-btn" data-type="sach">Sách / Giáo trình</button>
+      <button class="tab-btn" data-type="huongdan">Hướng dẫn SV</button>
+      <button class="tab-btn" data-type="giaithuong">Giải thưởng</button>
+    </nav>
+
+    <section id="content">
+      <div class="toolbar">
+        <button id="addItem">Thêm mục</button>
+      </div>
+      <div id="list"></div>
+    </section>
+  </main>
+
+  <script>
+    window.APP = { initialType: 'detai' };
+  </script>
+  <script src="/script.js"></script>
+</body>
+</html>

@@ -1,135 +1,16 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f8f9fc;
-  color: #222;
-}
-
-header {
-  background-color: #ffcc00;
-  text-align: center;
-  padding: 10px;
-  position: relative;
-}
-
-.header-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #ffcc00;
-}
-
-.logo {
-  width: 80px;
-  margin: 10px;
-}
-
-.header-text {
-  text-align: center;
-  flex-grow: 1;
-}
-
-.header-text h3, .header-text h2, .header-text p {
-  margin: 2px;
-}
-
-.header-badge {
-  display: flex;
-  flex-direction: column;
-  margin-right: 15px;
-}
-
-.header-badge span {
-  background: orange;
-  border-radius: 50%;
-  color: white;
-  font-weight: bold;
-  margin: 3px;
-  padding: 10px;
-}
-
-.main-title {
-  background: white;
-  color: red;
-  font-weight: bold;
-  padding: 15px;
-  margin: 0;
-}
-
-#viewDataBtn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: #000;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 10px 15px;
-  cursor: pointer;
-}
-
-.form-section {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin: 20px;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-}
-
-.tabs {
-  display: flex;
-  justify-content: center;
-  background: #f1f1f1;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-.tab {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin: 5px;
-  padding: 10px 15px;
-  cursor: pointer;
-}
-
-.tab.active {
-  background: #007bff;
-  color: white;
-  font-weight: bold;
-}
-
-.tab-content {
-  display: none;
-  margin: 20px;
-}
-
-.tab-content.active {
-  display: block;
-}
-
-.book-list {
-  background: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-}
-
-.book-item {
-  margin: 10px 0;
-}
-
-#addBookBtn {
-  background: #28a745;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 8px;
-  cursor: pointer;
-}
+body{font-family:Arial,Helvetica,sans-serif;background:#f6f8fb;margin:0;padding:20px}
+.container{max-width:1100px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.header-top{display:flex;align-items:center;gap:12px}
+.header-top .logo{width:70px}
+.main-title{text-align:center;margin-top:6px}
+.profile{display:flex;gap:10px;align-items:flex-end;margin:14px 0;flex-wrap:wrap}
+.p-col{display:flex;flex-direction:column}
+.p-col input, .p-col select{padding:8px;border:1px solid #ccc;border-radius:4px}
+.tabs{display:flex;gap:8px;margin:10px 0}
+.tab-btn{padding:8px 12px;border:1px solid #ddd;background:#fff;border-radius:6px;cursor:pointer}
+.tab-btn.active{background:#0b74ff;color:#fff;border-color:#0b74ff}
+.toolbar{margin:10px 0}
+.item{border:1px solid #e6edf6;padding:12px;border-radius:6px;margin-bottom:8px;background:#fbfdff}
+.add-form input, .add-form textarea{width:100%;padding:8px;margin-bottom:8px;border:1px solid #ddd;border-radius:4px}
+.form-actions{display:flex;gap:10px}
+.msg{color:green;margin-left:10px}
